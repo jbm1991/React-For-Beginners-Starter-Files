@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "google",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+  }
+  },
+  "plugins": ["prettier", "react", "babel"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-tabs":"off",
+    "indent": ["error", "tab", {"SwitchCase": 1}],
+    "arrow-parens": "off",
+    "quotes": "off",
+    "comma-dangle":"off",
+    "object-curly-spacing":"off",
+    "max-len": ["error", {"code": 120}],
+    "require-jsdoc":"off",
+    "no-invalid-this": "off",
+    "babel/no-invalid-this": "error"
+  }
+}
